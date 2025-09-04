@@ -14,4 +14,23 @@ Route::get('/', function () {
     foreach($fruits as $fruit){
         echo "$fruit ";
     }
+    echo "<br><br>";
+
+    echo "*****ESTRUCTURAS DE CONTROL***** <br><br>";
+    if($age>=18){
+        echo "Eres mayor de edad.<br>";
+    }else if($age==18){
+        echo "Tienes 18 años.<br>";
+    }else{
+        echo "Eres menor de edad.<br>";
+    }
+
+    echo "<br>*****FUNCIONES***** <br><br>";
+    function greet($name){
+        return "Hola, $name!<br>";
+    }
+    echo greet("Danna");
+    
+
+
 });
