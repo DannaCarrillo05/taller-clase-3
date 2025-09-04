@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/contacto', function () {
+    return view('formulario');
+});
+
 Route::get('/', function () {
     echo "*****VARIBALE SY TIPOS DE VARIABLES***** <br><br>";
     $name="Danna"; //string
@@ -36,7 +40,7 @@ Route::get('/', function () {
     echo "Nombre: ".$person["name"]."<br>";
     echo "Edad: ".$person["age"]."<br>";
     echo "Estatura: ".$person["height"]."<br>"; 
-    
+
 
     echo "<br>*****BUCLES***** <br><br>";
     echo "Bucle for:<br>";
