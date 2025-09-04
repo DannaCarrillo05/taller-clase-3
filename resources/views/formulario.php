@@ -134,7 +134,7 @@
             <svg viewBox="0 0 48 48"><path d="M24 4C13.1 4 4 13.1 4 24s9.1 20 20 20 20-9.1 20-20S34.9 4 24 4zm0 36c-8.8 0-16-7.2-16-16S15.2 8 24 8s16 7.2 16 16-7.2 16-16 16zm-7-14c0-3.9 3.1-7 7-7s7 3.1 7 7c0 2.2-1.8 4-4 4h-6c-2.2 0-4-1.8-4-4zm7-9c-2.2 0-4 1.8-4 4h8c0-2.2-1.8-4-4-4z"/></svg>
         </div>
         <h2>Contacto</h2>
-        <form method="POST" action="/enviar-contacto">
+        <form method="GET" action="{{ route('contacto.store') }}">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
 
