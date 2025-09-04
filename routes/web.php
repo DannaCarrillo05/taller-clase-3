@@ -30,6 +30,29 @@ Route::get('/', function () {
         return "Hola, $name!<br>";
     }
     echo greet("Danna");
+
+    echo "<br>*****ARREGLOS y MAPAS***** <br><br>";
+    $person=["name"=>"Danna","age"=>20,"height"=>1.60];
+    echo "Nombre: ".$person["name"]."<br>";
+    echo "Edad: ".$person["age"]."<br>";
+    echo "Estatura: ".$person["height"]."<br>"; 
+    
+
+    echo "<br>*****BUCLES***** <br><br>";
+    echo "Bucle for:<br>";
+    for($i=1; $i<=5; $i++){
+        echo "Número: $i<br>";
+    }
+    echo "<br>Bucle while:<br>";
+    $j=1;
+    while($j<=5){
+        echo "Número: $j<br>";
+        $j++;
+    }
+    echo "<br>Bucle foreach:<br>";
+    foreach($fruits as $fruit){
+        echo "Fruta: $fruit<br>";
+    }
     
 
 
